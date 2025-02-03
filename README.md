@@ -3,6 +3,8 @@
 Hi there, this portfolio is a WIP, intended to demonstrate that I have a strong command of Python and am able to implement solutions for various problems in Machine and Deep Learning.
 
 So far we have:
+- NLP Text classification using BERT on the IMDB review dataset
+
 - Tabular regression using a novel NN architecture where instead of using matrices as weights we use wave functions to encode information (inspired by quantum mechanics)
 
 - A multi-modal approach for valuing Diamonds, leveraging  images of the diamond alongside tabular features
