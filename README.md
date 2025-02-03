@@ -7,6 +7,8 @@ So far we have:
 
 - Tabular regression using a novel NN architecture where instead of using matrices as weights we use wave functions to encode information (inspired by quantum mechanics)
 
+- Time series forecasting of temperature using an LSTM with extensive EDA
+
 - A multi-modal approach for valuing Diamonds, leveraging  images of the diamond alongside tabular features
 
 - DCGAN implementation that generates Anime faces!
