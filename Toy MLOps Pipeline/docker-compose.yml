@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  data_processor:
+    build: .
+    image: mlops-pipeline
+    command: python src/data_pipeline.py
+    volumes:
+      - ./data/raw:/app/data/raw
+      - ./data/processed:/app/data/processed
+
+  model_trainer:
+    image: mlops-pipeline
+    environment:
+      WAIT_FOR_FILE: /app/data/processed/processed_data.csv
+    command: python src/train.py
+    volumes:
+      - ./data/processed:/app/data/processed
+      - ./models:/app/models
+    depends_on:
+      - data_processor
+
+  model_server:
+    image: mlops-pipeline
+    environment:
+      WAIT_FOR_FILE: /app/models/model.pkl
+    command: uvicorn src.app:app --host 0.0.0.0 --port 8000
+    volumes:
+      - ./models:/app/models
+    ports:
+      - "8000:8000"
+    depends_on:
+      - model_trainer
