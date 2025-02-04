@@ -1,0 +1,25 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pandas = "*"
+swifter = "*"
+scikit-learn = "*"
+tqdm = "*"
+matplotlib = "*"
+seaborn = "*"
+nltk = "*"
+wordcloud = "*"
+transformers = "*"
+datasets = "*"
+statsmodels = "*"
+torch = "*"
+torchvision = "*"
+jupyterlab = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.12"
