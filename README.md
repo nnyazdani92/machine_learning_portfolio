@@ -1,6 +1,6 @@
-# Nick Yazdani's Machine Learning and Data Science Portfolio
+# Nick Yazdani's Machine Learning Portfolio
 
-Hi there, this portfolio is a WIP, intended to demonstrate that I have a strong command of Python and am able to implement solutions for various problems in Machine and Deep Learning.
+Hi there, this portfolio is a WIP, intended to demonstrate that I have a strong command of Python and am able to implement solutions for various machine learning problems.
 
 So far we have:
 - NLP Text classification using BERT on the IMDB review dataset
