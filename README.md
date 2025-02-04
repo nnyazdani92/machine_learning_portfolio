@@ -15,6 +15,7 @@ So far we have:
 
 - A simple yet effective Denoising Convolutional Autoencoder
 
-- Toy example of a simple MLOps pipeline (WIP)
+On its way:
+- Fully fledged MLOps pipeline showcasing each step of the lifecycle (toy example was abadoned due to being overly simple)
 
 There is more to come, the intention here is to eventually have scripts and notebooks that cover all interesting areas of deep learning and more. I usually do this stuff for fun on Kaggle when I'm tinkering but I thought I might upload notebooks here from now on so that I can demonstrate them to anyone who is interested to see what I can do :)
